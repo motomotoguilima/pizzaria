@@ -1,0 +1,151 @@
+/* reset css para tirar todas as margens dos elementos */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+/* estilização do header - cabecalho*/
+.cabecalho{
+    background-color: red;
+    display: flex;
+    justify-content:  space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.cabecalho > img{
+    height: 60px;
+}
+.menu{
+    display: flex;
+}
+.menu > li {
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+.menu > li > a {
+    color: white;
+    text-decoration: none;
+    text-shadow: 2px 2px black;
+    padding-left: 10px;
+    padding-right: 10px ;
+    font-weight: 600;
+}
+.menu > li:hover {
+    background-color: aqua;}
+/* estilizando nosso banner*/
+
+.banner{
+    background-image: url(../img/pizza.jpg);
+    background-size: cover;
+    background-position: top center;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    text-shadow: 1px 1px 1px black;
+    margin-bottom: 30px;
+    box-shadow: 10px 3px 5px rgb(57, 214, 70);
+}
+.botao1{
+    border-radius: 0px 0px;
+    border: 2px solid white;
+    padding: 10px;
+    text-decoration: none;
+    color: aliceblue;
+    background-color: black;
+
+}
+.botao1:hover{
+    background-color: white;
+    color: rgb(167, 27, 27);
+}
+.pagina{
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1300px;
+    
+}
+.linha{
+    background: rgb(0,212,255);
+    background: linear-gradient(90deg, rgba(0,212,255,0) 0%, rgba(255,0,0,1) 52%, rgba(255,0,0,0) 98%);
+    border: 0;
+    height: 3px;
+}
+.pagina > h2 {
+color: rgb(56, 160, 30);
+}
+.sabores{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   
+}
+.sabor > img{
+border-radius: 10px;
+width: 100%;
+
+}
+.sabor{
+    background-color: rgb(48, 212, 62);
+    text-decoration: none;
+    border-radius: 10%;
+    color: white;
+    margin: 10px;
+    min-width: 250px;
+    box-shadow: 10px 3px 5px rgb(57, 214, 70);
+max-width: 250px;
+}
+.dinheiro{
+    padding: 10px;
+    text-decoration: none;
+    color: yellow;
+    margin: 10px;
+     border-radius: 10px;
+    background-color: #ccb800;
+  border: 1px solid yellow;
+  }
+ 
+  
+    
+  
+  .promocoes{
+    gap: 10px;
+    display: flex;
+    overflow: scroll;
+  }
+  .promocoes::-webkit-scrollbar{
+    display: none;
+  }
+  @media (max-width:600px){
+    .sabores{
+        flex-direction: column;
+    }
+    .sabor{
+        background-color: black;
+    }
+  }
+  /* estilizando o rodape */
+  .rodape{
+background-color: red;
+display: flex;
+justify-content: space-between;
+padding: 10px;
+color: white;
+}
+a{
+    color: white;
+    text-decoration: none;
+
+}
+li{
+     list-style-type: none;
+}
+
+
